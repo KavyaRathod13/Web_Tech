@@ -1,0 +1,22 @@
+
+# Database credentials
+**/backend/db.php
+
+# Database backups
+*.sql
+
+# Private form submissions
+**/database/*.csv
+
+# Uploaded user files
+**/uploads/*.jpg
+**/uploads/*.jpeg
+**/uploads/*.png
+**/uploads/*.pdf
+
+# Local environment files
+.env
+.env.*
+
+# Admin setup script
+**/setup_admin.php

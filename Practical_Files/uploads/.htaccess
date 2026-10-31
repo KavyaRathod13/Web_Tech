@@ -1,0 +1,7 @@
+# Prevent users from viewing folder contents
+Options -Indexes
+
+# Allow PHP files to run normally
+<FilesMatch "\.(php|phtml|phar)$">
+    Require all granted
+</FilesMatch>

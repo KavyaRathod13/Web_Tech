@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Login</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Practical 4 CSS -->
+    <link rel="stylesheet" href="css/practical4-interactivity.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Notification Banner -->
+    <div class="notification-banner shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-info-circle-fill me-2"></i> <strong>Notice:</strong> Registration for Hackathon 2026 is now open!</span>
+            <button class="banner-close-btn" aria-label="Dismiss Banner">&times;</button>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="bg-navy py-3 shadow-sm sticky-top">
+        <div class="container text-center position-relative">
+            
+            <!-- Dark/Light Theme Toggle Button -->
+            <div class="position-absolute top-0 end-0 mt-1 me-2 me-md-0">
+                <button class="theme-toggle-btn" type="button">
+                    🌙 <span class="d-none d-md-inline ms-1">Dark</span>
+                </button>
+            </div>
+
+            <!-- Center-aligned Gradient Title -->
+            <h1 class="header-title m-0 pb-2">
+                <i class="bi bi-mortarboard-fill me-2 text-accent"></i>StudentHub
+            </h1>
+
+            <!-- Center-aligned Nav Links -->
+            <nav class="navbar navbar-expand-lg navbar-dark p-0 justify-content-center">
+                <button class="navbar-toggler border-0 my-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-center gap-lg-1">
+                        <li class="nav-item"><a class="nav-link" href="home.php
+">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="profile.php">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admin.php">Admin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Grid Layout -->
+    <main class="container my-4 flex-grow-1">
+        
+        <!-- Breadcrumb Navigation -->
+        <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.php
+" class="text-decoration-none text-accent fw-semibold"><i class="bi bi-house-door-fill me-1"></i>Home</a></li>
+                <li class="breadcrumb-item active text-secondary" aria-current="page">Login</li>
+            </ol>
+        </nav>
+
+        <!-- Clean Hero Section -->
+        <section class="p-4 p-md-4 mb-4 rounded-3 shadow-sm hero-navy text-center card-hover">
+            <h2 class="mb-2">Student Portal Login</h2>
+            <p class="col-lg-9 mx-auto mb-3">
+                Enter your login details to access your StudentHub account, dashboard, and campus services.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-outline-light-custom px-4 py-2 fw-medium" data-modal-target="#loginHelpModal">
+                    <i class="bi bi-question-circle me-1"></i> Login Assistance
+                </button>
+            </div>
+        </section>
+
+        <!-- Interactive Content Slider Section -->
+        <section class="mb-4">
+            <div class="slider-container shadow-sm">
+                <button class="slider-btn slider-btn-prev" aria-label="Previous Slide">&lang;</button>
+                <div class="slider-track">
+                    <div class="slide-item p-4 text-center bg-white">
+                        <h4 class="text-navy fw-bold mb-1"><i class="bi bi-shield-lock-fill me-2 text-accent"></i>Secure Access</h4>
+                        <p class="text-muted mb-0">Always verify that you are logging in on official campus networks or endpoints.</p>
+                    </div>
+                    <div class="slide-item p-4 text-center bg-white">
+                        <h4 class="text-navy fw-bold mb-1"><i class="bi bi-key-fill me-2 text-accent"></i>Password Protection</h4>
+                        <p class="text-muted mb-0">Never share your portal credentials or OTP details with anyone.</p>
+                    </div>
+                    <div class="slide-item p-4 text-center bg-white">
+                        <h4 class="text-navy fw-bold mb-1"><i class="bi bi-headset me-2 text-accent"></i>Account Locked?</h4>
+                        <p class="text-muted mb-0">Contact technical support or visit the admin portal for credential resets.</p>
+                    </div>
+                </div>
+                <button class="slider-btn slider-btn-next" aria-label="Next Slide">&rang;</button>
+            </div>
+        </section>
+
+        <!-- Grid Row for Main Content and Sidebar -->
+        <div class="row g-4">
+            
+            <!-- Primary Form Area -->
+            <div class="col-lg-8">
+                <article class="card border-0 shadow-sm card-hover">
+                    <div class="card-body p-4 p-md-5">
+                        <h3 class="h5 card-title text-navy fw-bold mb-4">
+                            <i class="bi bi-box-arrow-in-right me-2 text-accent"></i>Sign In
+                        </h3>
+
+                        <form id="loginForm" action="backend/login.php" method="POST">
+                            <div class="row g-3">
+                                
+                                <!-- Enrollment Number -->
+                                <div class="col-12">
+                                    <label for="enrollment" class="form-label fw-semibold text-navy">Enrollment Number</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light text-navy"><i class="bi bi-card-heading"></i></span>
+                                        <input type="text" class="form-control" id="enrollment" name="enrollment" placeholder="Enter enrollment number" required>
+                                    </div>
+                                </div>
+
+                                <!-- Password -->
+                                <div class="col-12">
+                                    <label for="password" class="form-label fw-semibold text-navy">Password</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light text-navy"><i class="bi bi-lock-fill"></i></span>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                                    </div>
+                                </div>
+
+                                <!-- Remember Me & Forgot Password Row -->
+                                <div class="col-12 d-flex justify-content-between align-items-center mt-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="remember" name="remember">
+                                        <label class="form-check-label text-secondary" for="remember">
+                                            Remember Me
+                                        </label>
+                                    </div>
+                                    <a href="#" class="text-accent text-decoration-none small fw-semibold">Forgot Password?</a>
+                                </div>
+
+                                <!-- Form Buttons -->
+                                <div class="col-12 d-flex gap-2 mt-4">
+                                    <button type="submit" class="btn btn-accent px-4 py-2 fw-medium">
+                                        <i class="bi bi-box-arrow-in-right me-1"></i>Login
+                                    </button>
+                                    <button type="reset" class="btn btn-outline-secondary px-4 py-2 fw-medium">
+                                        <i class="bi bi-arrow-counterclockwise me-1"></i>Clear
+                                    </button>
+                                </div>
+
+                            </div>
+                        <div id="loginStatus" class="small mt-2" role="alert"></div>
+</form>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Sidebar / Aside -->
+            <aside class="col-lg-4">
+                <div class="card border-0 shadow-sm card-hover">
+                    <div class="card-body p-4">
+                        <h3 class="h5 card-title text-navy fw-bold mb-3">
+                            <i class="bi bi-shield-check me-2 text-accent"></i>Login Tips
+                        </h3>
+                        <ul class="list-group list-group-flush fs-6">
+                            <li class="list-group-item bg-transparent text-secondary px-0">
+                                <i class="bi bi-check2-circle text-navy me-2"></i>Use your registered enrollment number.
+                            </li>
+                            <li class="list-group-item bg-transparent text-secondary px-0">
+                                <i class="bi bi-check2-circle text-navy me-2"></i>Keep your password confidential.
+                            </li>
+                            <li class="list-group-item bg-transparent text-secondary px-0">
+                                <i class="bi bi-check2-circle text-navy me-2"></i>Log out after using a shared computer.
+                            </li>
+                            <li class="list-group-item bg-transparent text-secondary px-0">
+                                <i class="bi bi-check2-circle text-navy me-2"></i>Contact the admin if you cannot log in.
+                            </li>
+                        </ul>
+                        <hr class="my-3 text-muted">
+                        <p class="small text-muted mb-0">
+                            Don't have an account? <a href="register.html" class="text-accent fw-semibold text-decoration-none">Register here</a>.
+                        </p>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Interactive Custom Modal Popup -->
+    <div class="custom-modal" id="loginHelpModal" aria-hidden="true">
+        <div class="custom-modal-dialog">
+            <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
+                <h5 class="m-0 fw-bold text-navy"><i class="bi bi-question-circle-fill me-2 text-accent"></i>Need Login Support?</h5>
+                <button type="button" class="btn-close" data-modal-close aria-label="Close Modal"></button>
+            </div>
+            <p class="text-secondary mb-3">
+                If you have forgotten your password or your account is temporarily locked, please contact the IT Helpdesk or visit the Admin Office for account recovery assistance.
+            </p>
+            <div class="text-end">
+                <button type="button" class="btn btn-accent px-4" data-modal-close>Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-3 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0 text-white-50">&copy; 2026 StudentHub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Practical 4 JS File -->
+    <script src="js/practical4-interactivity.js"></script>
+<script src="js/studenthub.js"></script>
+</body>
+
+</html>

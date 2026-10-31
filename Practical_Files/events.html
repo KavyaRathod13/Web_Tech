@@ -1,0 +1,655 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Events</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Practical 4 CSS -->
+    <link rel="stylesheet" href="css/practical4-interactivity.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Notification Banner -->
+    <div class="notification-banner shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span>
+                <i class="bi bi-info-circle-fill me-2"></i>
+                <strong>Notice:</strong>
+                Registrations for Hackathon 2026 close soon! Grab your spot now.
+            </span>
+            <button class="banner-close-btn" aria-label="Dismiss Banner">&times;</button>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="bg-navy py-3 shadow-sm sticky-top">
+        <div class="container text-center position-relative">
+
+            <!-- Dark/Light Theme Toggle Button -->
+            <div class="position-absolute top-0 end-0 mt-1 me-2 me-md-0">
+                <button class="theme-toggle-btn" type="button">
+                    🌙 <span class="d-none d-md-inline ms-1">Dark</span>
+                </button>
+            </div>
+
+            <!-- Center-aligned Gradient Title -->
+            <h1 class="header-title m-0 pb-2">
+                <i class="bi bi-mortarboard-fill me-2 text-accent"></i>StudentHub
+            </h1>
+
+            <!-- Center-aligned Nav Links -->
+            <nav class="navbar navbar-expand-lg navbar-dark p-0 justify-content-center">
+
+                <button class="navbar-toggler border-0 my-1"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-center gap-lg-1">
+                        <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="profile.php">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admin.php">Admin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Grid Layout -->
+    <main class="container my-4 flex-grow-1">
+
+        <!-- Breadcrumb Navigation -->
+        <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="home.php" class="text-decoration-none text-accent fw-semibold">
+                        <i class="bi bi-house-door-fill me-1"></i>Home
+                    </a>
+                </li>
+                <li class="breadcrumb-item active text-secondary" aria-current="page">
+                    Events
+                </li>
+            </ol>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="p-4 p-md-4 mb-4 rounded-3 shadow-sm hero-navy text-center card-hover">
+            <h2 class="mb-2">Campus Events & Activities</h2>
+            <p class="col-lg-9 mx-auto mb-0 text-white-50">
+                StudentHub keeps students informed about workshops, competitions,
+                seminars, and cultural activities happening across campus.
+            </p>
+        </section>
+
+        <!-- Interactive Content Slider -->
+        <section class="mb-4">
+            <div class="slider-container shadow-sm">
+
+                <button class="slider-btn slider-btn-prev" aria-label="Previous Slide">
+                    &lang;
+                </button>
+
+                <div class="slider-track">
+
+                    <div class="slide-item p-4 text-center bg-white">
+                        <h4 class="text-navy fw-bold mb-1">
+                            <i class="bi bi-star-fill me-2 text-accent"></i>
+                            Featured Event: Hackathon 2026
+                        </h4>
+                        <p class="text-muted mb-0">
+                            Join 200+ developers for a 24-hour coding marathon in Computer Lab 4.
+                        </p>
+                    </div>
+
+                    <div class="slide-item p-4 text-center bg-white">
+                        <h4 class="text-navy fw-bold mb-1">
+                            <i class="bi bi-lightning-charge-fill me-2 text-accent"></i>
+                            AI & ML Workshop
+                        </h4>
+                        <p class="text-muted mb-0">
+                            Hands-on deep learning session hosted by industry experts on August 18.
+                        </p>
+                    </div>
+
+                    <div class="slide-item p-4 text-center bg-white">
+                        <h4 class="text-navy fw-bold mb-1">
+                            <i class="bi bi-trophy-fill me-2 text-accent"></i>
+                            Annual Sports Meet
+                        </h4>
+                        <p class="text-muted mb-0">
+                            Inter-departmental athletics tournament starting August 25 on the Main Ground.
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="slider-btn slider-btn-next" aria-label="Next Slide">
+                    &rang;
+                </button>
+
+            </div>
+        </section>
+
+        <!-- Main Content and Sidebar -->
+        <div class="row g-4">
+
+            <!-- Primary Content -->
+            <div class="col-lg-8">
+
+                <!-- Events Schedule -->
+                <article class="card border-0 shadow-sm mb-4 card-hover">
+                    <div class="card-body p-4">
+
+                        <h3 class="h5 card-title text-navy fw-bold mb-3">
+                            <i class="bi bi-calendar-event-fill me-2 text-accent"></i>
+                            Upcoming Events
+                        </h3>
+
+                        <!-- Search, Filter and Sort -->
+                        <div class="row g-2 mb-3">
+
+                            <div class="col-md-5">
+                                <input type="text"
+                                       id="search"
+                                       class="form-control"
+                                       placeholder="Search event">
+                            </div>
+
+                            <div class="col-md-4">
+                                <select id="category" class="form-select">
+                                    <option value="All">All</option>
+                                    <option value="Workshop">Workshop</option>
+                                    <option value="Seminar">Seminar</option>
+                                    <option value="Competition">Competition</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button class="btn btn-accent w-100"
+                                        type="button"
+                                        onclick="sortEvents()">
+                                    Sort by Name
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Events Table -->
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0">
+
+                                <thead class="table-light">
+                                    <tr>
+                                        <th scope="col" class="text-navy">Event</th>
+                                        <th scope="col" class="text-navy">Category</th>
+                                        <th scope="col" class="text-navy">Date</th>
+                                        <th scope="col" class="text-navy text-end">Action</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="eventTableBody">
+                                    <tr>
+                                        <td colspan="4" class="text-center">
+                                            Loading events...
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="d-flex justify-content-center gap-2 mt-3">
+
+                            <button class="btn btn-outline-secondary"
+                                    type="button"
+                                    onclick="previousPage()">
+                                Previous
+                            </button>
+
+                            <button class="btn btn-accent"
+                                    type="button"
+                                    onclick="nextPage()">
+                                Next
+                            </button>
+
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Event Guidelines -->
+                <section class="card border-0 shadow-sm card-hover">
+                    <div class="card-body p-4">
+
+                        <h3 class="h5 card-title text-navy fw-bold mb-3">
+                            <i class="bi bi-card-checklist me-2 text-accent"></i>
+                            Event Guidelines
+                        </h3>
+
+                        <ul class="list-group list-group-flush fs-6">
+
+                            <li class="list-group-item bg-transparent text-secondary px-0">
+                                <i class="bi bi-check-circle-fill text-navy me-2"></i>
+                                Register before the last date to confirm your participation.
+                            </li>
+
+                            <li class="list-group-item bg-transparent text-secondary px-0">
+                                <i class="bi bi-person-badge-fill text-navy me-2"></i>
+                                Always carry your physical college ID card for entry verification.
+                            </li>
+
+                            <li class="list-group-item bg-transparent text-secondary px-0">
+                                <i class="bi bi-clock-fill text-navy me-2"></i>
+                                Report at least 15 minutes before the scheduled start time.
+                            </li>
+
+                            <li class="list-group-item bg-transparent text-secondary px-0">
+                                <i class="bi bi-shield-exclamation text-navy me-2"></i>
+                                Follow all venue guidelines and instructions provided by student coordinators.
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="col-lg-4">
+
+                <!-- Latest Updates -->
+                <div class="card border-0 shadow-sm card-hover">
+                    <div class="card-body p-4">
+
+                        <h3 class="h5 card-title text-navy fw-bold mb-3">
+                            <i class="bi bi-bell-fill me-2 text-accent"></i>
+                            Latest Updates
+                        </h3>
+
+                        <ul class="list-group list-group-flush fs-6">
+
+                            <li class="list-group-item bg-transparent text-secondary px-0">
+                                <i class="bi bi-exclamation-circle-fill text-danger me-2"></i>
+                                <strong>Hackathon:</strong>
+                                Registration closes on 10 August.
+                            </li>
+
+                            <li class="list-group-item bg-transparent text-secondary px-0">
+                                <i class="bi bi-award-fill text-accent me-2"></i>
+                                <strong>Certificates:</strong>
+                                Participation certificates will be provided for all events.
+                            </li>
+
+                            <li class="list-group-item bg-transparent text-secondary px-0">
+                                <i class="bi bi-cup-hot-fill text-navy me-2"></i>
+                                <strong>Refreshments:</strong>
+                                Available for attendees during workshops.
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Custom Modal Popup -->
+    <div class="custom-modal" id="eventModal" aria-hidden="true">
+
+        <div class="custom-modal-dialog">
+
+            <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
+                <h5 class="m-0 fw-bold text-navy">
+                    <i class="bi bi-ticket-perforated-fill me-2 text-accent"></i>
+                    Confirm Event Registration
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-modal-close
+                        aria-label="Close Modal">
+                </button>
+            </div>
+
+            <p class="text-secondary mb-3">
+                Are you sure you want to register for this event?
+                A pass with event guidelines will be emailed to your student ID upon confirmation.
+            </p>
+
+            <div class="text-end d-flex justify-content-end gap-2">
+
+                <button type="button"
+                        class="btn btn-outline-secondary"
+                        data-modal-close>
+                    Cancel
+                </button>
+
+                <button type="button"
+                        class="btn btn-accent px-3"
+                        data-modal-close>
+                    <i class="bi bi-check2-circle me-1"></i>
+                    Confirm Registration
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-3 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0 text-white-50">
+                &copy; 2026 StudentHub. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Practical 4 JS -->
+    <script src="js/practical4-interactivity.js"></script>
+
+    <!-- Event Registration Success Message -->
+    <script>
+        if (new URLSearchParams(location.search).has('joined')) {
+            window.addEventListener('DOMContentLoaded', function () {
+                const box = document.createElement('div');
+                box.className = 'container alert alert-success mt-3';
+                box.textContent = 'Event registration saved.';
+                document.querySelector('main')?.prepend(box);
+            });
+        }
+    </script>
+
+    <!-- Events JSON/API -->
+    <script>
+
+        // Isolate variables to avoid conflicts with other JavaScript files
+        (function () {
+
+            let events = [];
+            let page = 1;
+            const perPage = 5;
+
+            const tableBody = document.getElementById('eventTableBody');
+            const searchInput = document.getElementById('search');
+            const categorySelect = document.getElementById('category');
+
+            // Safely display text received from the backend
+            function safe(value) {
+                return String(value ?? '').replace(/[&<>"']/g, function (c) {
+                    return {
+                        '&': '&amp;',
+                        '<': '&lt;',
+                        '>': '&gt;',
+                        '"': '&quot;',
+                        "'": '&#39;'
+                    }[c];
+                });
+            }
+
+            // Fetch events from PHP backend
+            fetch('backend/events_public.php')
+                .then(function (response) {
+
+                    if (!response.ok) {
+                        throw new Error('Unable to load events.');
+                    }
+
+                    return response.json();
+                })
+                .then(function (data) {
+
+                    if (!Array.isArray(data)) {
+                        throw new Error('Invalid events data.');
+                    }
+
+                    events = data;
+                    displayEvents();
+                })
+                .catch(function (error) {
+
+                    console.error('Events loading error:', error);
+
+                    tableBody.innerHTML =
+                        "<tr><td colspan='4' class='text-center text-danger'>" +
+                        "Error loading events" +
+                        "</td></tr>";
+                });
+
+            // Filter, search and display events
+            function displayEvents() {
+
+                const searchText = searchInput.value.toLowerCase().trim();
+                const category = categorySelect.value;
+
+                // Search
+                let result = events.filter(function (event) {
+                    return String(event.name ?? '')
+                        .toLowerCase()
+                        .includes(searchText);
+                });
+
+                // Category filter
+                if (category !== 'All') {
+                    result = result.filter(function (event) {
+                        return event.category === category;
+                    });
+                }
+
+                // Keep pagination within available results
+                const totalPages = Math.max(1, Math.ceil(result.length / perPage));
+
+                if (page > totalPages) {
+                    page = totalPages;
+                }
+
+                if (page < 1) {
+                    page = 1;
+                }
+
+                // Pagination
+                const start = (page - 1) * perPage;
+                const end = start + perPage;
+                const pageData = result.slice(start, end);
+
+                let output = '';
+
+                // Display rows
+                pageData.forEach(function (event) {
+
+                    output +=
+                        "<tr>" +
+
+                        "<td class='fw-bold text-navy'>" +
+                        "<i class='bi bi-calendar-event text-accent me-2'></i>" +
+                        safe(event.name) +
+                        "</td>" +
+
+                        "<td>" +
+                        safe(event.category) +
+                        "</td>" +
+
+                        "<td>" +
+                        "<span class='badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1'>" +
+                        safe(event.date) +
+                        "</span>" +
+                        "</td>" +
+
+                        "<td class='text-end'>" +
+                        "<button type='button' class='btn btn-sm btn-accent' data-event-id='" +
+                        safe(event.id) +
+                        "'>Register</button>" +
+                        "</td>" +
+
+                        "</tr>";
+                });
+
+                if (pageData.length === 0) {
+                    output =
+                        "<tr><td colspan='4' class='text-center text-secondary'>" +
+                        "No events found." +
+                        "</td></tr>";
+                }
+
+                tableBody.innerHTML = output;
+            }
+
+            // Event registration
+            tableBody.addEventListener('click', async function (e) {
+
+                const button = e.target.closest('[data-event-id]');
+
+                if (!button) {
+                    return;
+                }
+
+                try {
+
+                    const response = await fetch('backend/csrf.php');
+
+                    if (!response.ok) {
+                        throw new Error('Unable to verify login session.');
+                    }
+
+                    const session = await response.json();
+
+                    if (!session.logged_in) {
+                        location.href = 'login.html?error=login';
+                        return;
+                    }
+
+                    const form = document.createElement('form');
+                    form.method = 'POST';
+                    form.action = 'backend/event_register.php';
+
+                    const fields = {
+                        event_id: button.dataset.eventId,
+                        csrf: session.csrf
+                    };
+
+                    for (const [key, value] of Object.entries(fields)) {
+
+                        const input = document.createElement('input');
+                        input.type = 'hidden';
+                        input.name = key;
+                        input.value = value;
+
+                        form.appendChild(input);
+                    }
+
+                    document.body.appendChild(form);
+                    form.submit();
+
+                } catch (error) {
+                    console.error('Event registration error:', error);
+                    alert('Unable to process event registration. Please try again.');
+                }
+            });
+
+            // Search
+            searchInput.addEventListener('input', function () {
+                page = 1;
+                displayEvents();
+            });
+
+            // Category filter
+            categorySelect.addEventListener('change', function () {
+                page = 1;
+                displayEvents();
+            });
+
+            // Sort by event name
+            function sortEvents() {
+
+                events.sort(function (a, b) {
+                    return String(a.name ?? '').localeCompare(String(b.name ?? ''));
+                });
+
+                page = 1;
+                displayEvents();
+            }
+
+            // Next page
+            function nextPage() {
+
+                const searchText = searchInput.value.toLowerCase().trim();
+                const category = categorySelect.value;
+
+                const filtered = events.filter(function (event) {
+
+                    const matchesSearch =
+                        String(event.name ?? '').toLowerCase().includes(searchText);
+
+                    const matchesCategory =
+                        category === 'All' || event.category === category;
+
+                    return matchesSearch && matchesCategory;
+                });
+
+                const totalPages = Math.max(
+                    1,
+                    Math.ceil(filtered.length / perPage)
+                );
+
+                if (page < totalPages) {
+                    page++;
+                    displayEvents();
+                }
+            }
+
+            // Previous page
+            function previousPage() {
+
+                if (page > 1) {
+                    page--;
+                    displayEvents();
+                }
+            }
+
+            // Expose functions for the existing HTML onclick buttons
+            window.sortEvents = sortEvents;
+            window.nextPage = nextPage;
+            window.previousPage = previousPage;
+
+        })();
+
+    </script>
+
+    <!-- StudentHub Form and Session Handling -->
+    <script src="js/studenthub.js"></script>
+
+</body>
+</html>
